@@ -83,7 +83,7 @@ class AddressBook(UserDict):
             raise ValueError("Запис не знайдено")
 
     def get_upcoming_birthdays(self):
-        today = datetime.now().date()  # Отримуємо сьогоднішню дату без часу
+        today = datetime.now().date()
         upcoming_birthdays = []
         for record in self.data.values():
             if record.birthday:
